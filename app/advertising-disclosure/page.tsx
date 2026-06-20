@@ -1,0 +1,28 @@
+import { constructMetadata } from '@/app/utils/seo';
+
+export const metadata = constructMetadata({
+  title: 'Advertising Disclosure - PC Driver Info',
+  description: 'Learn more about advertising-disclosure at PC Driver Info. We provide clear, plain-English advice and troubleshooting steps for device drivers.',
+});
+
+import React from 'react'
+import LegalPolicyHero from '../components/legel-policy/LegalPolicyHero'
+import AdvertisingDisclosureContent from './AdvertisingDisclosureContent'
+
+function page() {
+
+const advertisingDisclosureHeroData = {
+  title: "Advertising Disclosure",
+  description: "How This Site Is Funded",
+  note:
+    "Our advertising and affiliate policy — and the deceptive formats we ban outright.",
+}
+  return (
+    <>
+    <LegalPolicyHero {...advertisingDisclosureHeroData} />
+    <AdvertisingDisclosureContent />
+    </>
+  )
+}
+
+export default page
