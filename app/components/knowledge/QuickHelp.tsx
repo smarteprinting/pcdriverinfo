@@ -62,13 +62,7 @@ const helpCards = [
     icon: Usb,
     href: "/drivers/usb-drivers",
   },
-  {
-    title: "System",
-    issue: "Computer slow after update",
-    desc: "Updates may replace tuned drivers with generic ones.",
-    icon: Cpu,
-    href: "/drivers/troubleshooting",
-  },
+
 ];
 
 function QuickHelp() {
